@@ -12,9 +12,9 @@ case $1 in
     docker-compose --project-name=$BUILD_ID-vkids2 start $1
     ;;
     "member")
-    docker-compose --project-name=$BUILD_ID-vkids up --no-color --no-start --build $1
-    docker stop $(docker ps -f name=vkids_$1 -q)
-    docker-compose --project-name=$BUILD_ID-vkids start $1
+    docker-compose --project-name=$BUILD_ID-vkids2 up --no-color --no-start --build $1
+    docker stop $(docker ps -f name=vkids2_$1 -q)
+    docker-compose --project-name=$BUILD_ID-vkids2 start $1
     ;;
     "resource")
     docker-compose --project-name=$BUILD_ID-vkids up --no-color --no-start --build $1
