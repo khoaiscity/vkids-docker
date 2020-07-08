@@ -45,7 +45,7 @@ services:
     tty: true
     working_dir: /app
     volumes:
-      - /www/uploads-vkids:/app/resource-server/uploads
+      - /www/uploads-vkids2:/app/resource-server/uploads
     network_mode: "host"
 
   backend:

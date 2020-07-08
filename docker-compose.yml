@@ -109,7 +109,7 @@ services:
     tty: true
     working_dir: /app
     volumes:
-      - /www/uploads-vkids:/app/mlm-ng/resource-server/uploads
+      - /www/uploads-vkids2:/app/mlm-ng/resource-server/uploads
     # ports:
     #   - '4002:4002'
     network_mode: "host"
