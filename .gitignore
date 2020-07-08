@@ -1,0 +1,15 @@
+# sources
+backend/mlm-ng-goapi
+admin/mlm-ng-admin
+member/mlm-ng
+resource/mlm-ng
+
+# backend files
+backend/go-space/bin/mlm-ng-goapi
+backend/go-space/runtime
+
+release/admin/admin.tar.gz
+release/member/member.tar.gz
+release/resource/resource.tar.gz
+release/backend/go-space/bin/mlm-ng-goapi
+release.tar.gz

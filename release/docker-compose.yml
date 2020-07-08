@@ -1,0 +1,78 @@
+version: '3.7'
+
+services:
+
+  webserver:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    container_name: nginx_webserver
+    restart: unless-stopped
+    tty: true
+    volumes:
+      # - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/sites-available:/etc/nginx/sites-available
+      - ./nginx/sites-available:/etc/nginx/sites-enabled
+    network_mode: "host"
+
+  vkidscronserver:
+    build:
+      context: ./vkidscron
+      dockerfile: Dockerfile
+    container_name: nginx_webserver_cron
+    restart: unless-stopped
+    tty: true
+    volumes:
+      # - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/sites-available:/etc/nginx/sites-available
+      - ./nginx/sites-available:/etc/nginx/sites-enabled
+    network_mode: "host"
+
+  member:
+    build:
+      context: ./member
+      dockerfile: Dockerfile
+    # image: vkids-member:prod
+    restart: unless-stopped
+    tty: true
+    working_dir: /app
+    network_mode: "host"
+
+  admin:
+    build:
+      context: ./admin
+      dockerfile: Dockerfile
+    # image: vkids-admin:prod
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+    working_dir: /app
+    network_mode: "host"
+
+  resource:
+    build:
+      context: ./resource
+      dockerfile: Dockerfile
+    # image: vkids-resource:prod
+    restart: unless-stopped
+    tty: true
+    working_dir: /app
+    volumes:
+      - /www/uploads-vkids:/app/resource-server/uploads
+    network_mode: "host"
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    # image: vkids-backend:prod
+    environment:
+      - GOPATH=/app/go-space
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+    working_dir: /app
+    volumes:
+      - /www/backend-vkids-logs:/app/go-space/runtime/logs
+    network_mode: "host"
+

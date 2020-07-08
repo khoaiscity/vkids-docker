@@ -1,0 +1,148 @@
+version: '3.7'
+
+services:
+
+  database:
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    image: vkids-database:prod
+    container_name: mysql_database
+    restart: unless-stopped
+    command: --default-authentication-plugin=mysql_native_password --sql_mode="" --general_log=1 --log_output=table
+    working_dir: /app
+    tty: true
+    environment:
+      MYSQL_ROOT_PASSWORD: 23F8EMetB3u4wUH4
+      MYSQL_DATABASE: db_vkids_test
+    # ports:
+    #   - "3306:3306"
+    network_mode: "host"
+
+  webserver:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    container_name: nginx_webserver:pro
+    restart: unless-stopped
+    tty: true
+    # ports:
+    #   - "80:80"
+    #   - "443:443"
+    volumes:
+      - ./nginx/sites-available:/etc/nginx/sites-available
+      - ./nginx/sites-available:/etc/nginx/sites-enabled
+    network_mode: "host"
+
+  member-build:
+    build:
+      context: ./member
+      dockerfile: build.Dockerfile
+    image: vkids-member-build:prod
+    restart: "no"
+    tty: true
+    working_dir: /app
+    volumes:
+      - ./member/build:/app/build
+      - ./member/mlm-ng:/app/mlm-ng
+    network_mode: "host"
+
+  member:
+    build:
+      context: ./member
+      dockerfile: run.Dockerfile
+    # image: vkids-member:prod
+    restart: unless-stopped
+    tty: true
+    working_dir: /app
+    # ports:
+    #   - '3102:3102'
+    #   - '4202:4202'
+    network_mode: "host"
+
+  admin-build:
+    build:
+      context: ./admin
+      dockerfile: build.Dockerfile
+    image: vkids-admin-build:prod
+    restart: "no"
+    tty: true
+    working_dir: /app
+    volumes:
+      - ./admin/build:/app/build
+      - ./admin/mlm-ng-admin:/app/mlm-ng-admin
+    network_mode: "host"
+
+  admin:
+    build:
+      context: ./admin
+      dockerfile: run.Dockerfile
+    # image: vkids-admin:prod
+    restart: unless-stopped
+    tty: true
+    working_dir: /app
+    # ports:
+    #   - '3202:3202'
+    network_mode: "host"
+
+  resource-build:
+    build:
+      context: ./resource
+      dockerfile: build.Dockerfile
+    image: vkids-resource-build:prod
+    restart: "no"
+    tty: true
+    working_dir: /app
+    volumes:
+      - ./resource/build:/app/build
+      - ./member/mlm-ng/resource-server:/app/resource-server
+    # ports:
+    #   - '4002:4002'
+    network_mode: "host"
+
+  resource:
+    build:
+      context: ./resource
+      dockerfile: run.Dockerfile
+    # image: vkids-resource:prod
+    restart: unless-stopped
+    tty: true
+    working_dir: /app
+    volumes:
+      - /www/uploads-vkids:/app/mlm-ng/resource-server/uploads
+    # ports:
+    #   - '4002:4002'
+    network_mode: "host"
+
+  backend-build:
+    build:
+      context: ./backend
+      dockerfile: build.Dockerfile
+    environment:
+      - GOPATH=/app/go-space
+    image: vkids-backend-build:prod
+    restart: "no"
+    tty: true
+    stdin_open: true
+    working_dir: /app
+    volumes:
+      - ./backend/go-space/bin:/app/go-space/bin
+      - ./backend/mlm-ng-goapi:/app/go-space/src/mlm-ng-goapi
+      - ./backend/mlm-ng-goapi:/app/go-space/src/github.com/smartblock/mlm-ng-goapi
+    network_mode: "host"
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: run.Dockerfile
+    # image: vkids-backend:prod
+    environment:
+      - GOPATH=/app/go-space
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+    working_dir: /app
+    volumes:
+      - /www/backend-vkids-logs:/app/go-space/runtime/logs
+    network_mode: "host"
+
