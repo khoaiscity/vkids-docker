@@ -15,19 +15,6 @@ services:
       - ./nginx/sites-available:/etc/nginx/sites-enabled
     network_mode: "host"
 
-  vkidscronserver:
-    build:
-      context: ./vkidscron
-      dockerfile: Dockerfile
-    container_name: nginx_webserver_cron
-    restart: unless-stopped
-    tty: true
-    volumes:
-      # - ./nginx/conf.d:/etc/nginx/conf.d
-      - ./nginx/sites-available:/etc/nginx/sites-available
-      - ./nginx/sites-available:/etc/nginx/sites-enabled
-    network_mode: "host"
-
   member:
     build:
       context: ./member
