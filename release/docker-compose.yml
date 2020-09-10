@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.7'  
 
 services:
 
@@ -9,7 +9,7 @@ services:
     container_name: nginx_webserver
     restart: unless-stopped
     tty: true
-    volumes:
+    volumes: 
       # - ./nginx/conf.d:/etc/nginx/conf.d
       - ./nginx/sites-available:/etc/nginx/sites-available
       - ./nginx/sites-available:/etc/nginx/sites-enabled
@@ -45,7 +45,7 @@ services:
     tty: true
     working_dir: /app
     volumes:
-      - /www/uploads-vkids2:/app/resource-server/uploads
+      - /www/uploads-vkids:/app/resource-server/uploads
     network_mode: "host"
 
   backend:
@@ -60,6 +60,6 @@ services:
     stdin_open: true
     working_dir: /app
     volumes:
-      - /www/backend-vkids2-logs:/app/go-space/runtime/logs
+      - /www/backend-vkids-logs:/app/go-space/runtime/logs
     network_mode: "host"
 

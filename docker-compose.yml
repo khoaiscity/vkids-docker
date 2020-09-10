@@ -109,7 +109,7 @@ services:
     tty: true
     working_dir: /app
     volumes:
-      - /www/uploads-vkids2:/app/mlm-ng/resource-server/uploads
+      - /www/uploads-vkids:/app/mlm-ng/resource-server/uploads
     # ports:
     #   - '4002:4002'
     network_mode: "host"
@@ -120,7 +120,7 @@ services:
       dockerfile: build.Dockerfile
     environment:
       - GOPATH=/app/go-space
-    image: vkids2-backend-build:prod
+    image: vkids-backend-build:prod
     restart: "no"
     tty: true
     stdin_open: true
