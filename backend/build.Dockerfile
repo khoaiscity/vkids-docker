@@ -1,4 +1,4 @@
-FROM golang:1.13.0-stretch
+FROM golang:1.15.0-alpine
 
 ENV APP_HOME /app
 
