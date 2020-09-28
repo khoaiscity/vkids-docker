@@ -63,3 +63,13 @@ services:
       - /www/backend-vkids-logs:/app/go-space/runtime/logs
     network_mode: "host"
 
+  vkidsland:
+    build:
+      context: ./vkidsland
+      dockerfile: Dockerfile
+    # image: vkids-admin:prod
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+    working_dir: /app
+    network_mode: "host"

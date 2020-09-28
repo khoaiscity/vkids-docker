@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/.gitignore">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/core/startup/common.service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/layout/default/header/header.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/routes/land-page/intro-video/intro-video.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/routes/land-page/intro-video/intro-video.component.less">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/routes/land-page/intro-video/intro-video.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/routes/land-page/land-page-routing.module.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/routes/land-page/land-page.module.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/routes/land-page/slider/slider.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/routes/land-page/slider/slider.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/routes/member/update-profile/update-profile.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/routes/routes-routing.module.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/routes/routing-config.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/routes/user/user-list/user-list.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/services/land-page.service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato-admin/client/src/app/shared/components/data-list/_schema/product-statement.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato/client/src/app/pages/user/login/login.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato/client/src/assets/tmp/i18n/en-US.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato/client/src/assets/tmp/i18n/ms_MY.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/sato/client/src/assets/tmp/i18n/zh-CN.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/vkids-land/about-us.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/vkids-land/contact.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/vkids-land/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/vkids-land/partner1.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/vkids-land/partner2.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/vkids-land/partner3.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Applications/MAMP/htdocs/vkids-land/products.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/conf/app.ini">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/docs/docs.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/models/admins.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/models/catalog_menu_entity_text.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/models/catalog_supplier.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/models/entmembertypemenu.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/models/expired_date_history.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/models/land_page_intro_video.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/models/land_page_slider.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/models/migrations.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/models/models.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/models/rwdperiod.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/models/sysmenu.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/models/tblbonuspair.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/models/translations.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/pkg/app/response.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/pkg/e/code.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/pkg/e/const.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/pkg/e/const_table_name.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/pkg/e/msg.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/pkg/e/msg_my.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/pkg/e/msg_zh.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/routers/api/admin/activation_code.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/routers/api/admin/admin.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/routers/api/admin/bonus.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/routers/api/admin/user_admin.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/routers/api/admin/wallet.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/routers/api/land_page/intro_video.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/routers/api/land_page/slider.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/routers/api/v1/v1.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/routers/router_admin.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/routers/router_user.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/service/admin/activation_code_service/activation_code.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/service/admin/admin_service/admin.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/service/admin/menu_service/system_menu.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/service/admin/sales_service/sales.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/service/admin/serializers/admin.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/service/admin/serializers/support_user.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/service/admin/user_service/user.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/service/landing_page/intro_video.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/service/landing_page/slider.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/service/public/menu_service/menu.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mygo/src/github.com/smartblock/mlm-ng-goapi/service/public/serializers/menu.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.gitignore">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.idea/sonarIssues.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/backend/go-space/conf/app.ini">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/docker-compose.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/release/backend/go-space/conf/app.ini">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/release/docker-compose.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/release/run.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../vkids-docker-live/.gitignore">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../vkids-docker-live/build.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../vkids-docker-live/docker-compose.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../vkids-docker-live/release/docker-compose.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../vkids-docker-live/release/run.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../vkids-docker-live/release/vkidsland/Dockerfile">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../vkids-docker-live/vkidsland/build.Dockerfile">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../vkids-docker-live/vkidsland/build/.gitignore">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../vkids-docker-live/vkidsland/run.Dockerfile">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

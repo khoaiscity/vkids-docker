@@ -1,8 +1,12 @@
+#ide
+.idea/
+
 # sources
 backend/mlm-ng-goapi
 admin/mlm-ng-admin
 member/mlm-ng
 resource/mlm-ng
+vkidsland/vkidsland
 
 # backend files
 backend/go-space/bin/mlm-ng-goapi

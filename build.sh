@@ -18,5 +18,9 @@ case $1 in
     docker-compose up --no-color --build $1-build
     cp ./resource/build/resource.tar.gz ./release/resource
     ;;
+    "vkidsland")
+    docker-compose up --no-color --build $1-build
+    cp ./vkidsland/build/vkidsland.tar.gz ./release/vkidsland
+    ;;
     *) echo please provide a service name ;;
 esac
