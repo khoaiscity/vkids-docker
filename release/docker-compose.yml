@@ -61,6 +61,7 @@ services:
     working_dir: /app
     volumes:
       - /www/backend-vkids-logs:/app/go-space/runtime/logs
+      - /www/uploads-vkids:/app/go-space/resource
     network_mode: "host"
 
   vkidsland:
