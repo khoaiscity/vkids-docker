@@ -7,8 +7,6 @@ RUN mkdir $APP_HOME
 
 WORKDIR $APP_HOME
 
-COPY ./environment.prod.ts $APP_HOME/client/src/environments/
-
 CMD echo BUILDING... \
   && npm install --no-color --silent --prefix mlm-ng-admin/client \
   && npm run build --progress=false --no-color --prefix mlm-ng-admin/client \
