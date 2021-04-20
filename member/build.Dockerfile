@@ -9,7 +9,7 @@ WORKDIR $APP_HOME
 
 CMD echo BUILDING... \ 
   && npm install --no-color --silent --prefix mlm-ng/client \
-  && npm run staging --progress=false --no-color --prefix mlm-ng/client \
+  && npm run build --progress=false --no-color --prefix mlm-ng/client \
   && cd mlm-ng \
   && echo COMPRESSING... \
   && tar -czf $APP_HOME/build/member.tar.gz server \
