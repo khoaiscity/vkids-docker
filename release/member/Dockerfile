@@ -13,6 +13,6 @@ COPY ./member.tar.gz $APP_HOME/
 RUN tar -xzf member.tar.gz && rm member.tar.gz
 
 RUN npm install --prefix server -y \
-  && npm run staging --prefix server
+  && npm run build --prefix server
 
 CMD node ./server/index.js
