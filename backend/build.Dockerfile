@@ -6,6 +6,7 @@ WORKDIR $APP_HOME
 
 RUN mkdir -p $APP_HOME/go-space
 
+RUN go get -u github.com/mailgun/mailgun-go/v3
 ENV GO111MODULE=on
 ENV GOFLAGS=-mod=vendor
 ENV GOPATH /app/go-space
