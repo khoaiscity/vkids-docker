@@ -10,10 +10,10 @@ ENV GO111MODULE=on
 ENV GOFLAGS=-mod=vendor
 ENV GOPATH /app/go-space
 
-RUN go mod download
-RUN go mod vendor
-
 CMD cd /app/go-space \
+  && echo running go mod download... && /usr/local/go/bin/go mod download github.com/smartblock/mlm-ng-goapi \
+  && echo running go mod vendor... && /usr/local/go/bin/go mod vendor github.com/smartblock/mlm-ng-goapi \
+
   && echo running go get... && /usr/local/go/bin/go get github.com/smartblock/mlm-ng-goapi \
   && cd bin \
   && echo running go build... && /usr/local/go/bin/go build mlm-ng-goapi \
