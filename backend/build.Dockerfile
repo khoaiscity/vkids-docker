@@ -9,6 +9,7 @@ RUN mkdir -p $APP_HOME/go-space
 ENV GOPATH /app/go-space
 
 CMD cd /app/go-space \
+  && cd src/github.com/smartblock/mlm-ng-goapi \
   && pwd \
   && ls -l \
   && echo done!
