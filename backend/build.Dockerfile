@@ -9,7 +9,7 @@ RUN mkdir -p $APP_HOME/go-space
 ENV GOPATH /app/go-space
 
 CMD cd /app/go-space \
-  && cd src/github.com/smartblock/mlm-ng-goapi \
-  && pwd \
-  && ls -l \
+  && echo running go get... && /usr/local/go/bin/go get github.com/smartblock/mlm-ng-goapi \
+  && cd bin \
+  && echo running go build... && /usr/local/go/bin/go build mlm-ng-goapi \
   && echo done!
