@@ -4,7 +4,7 @@ ENV APP_HOME /app
 
 WORKDIR $APP_HOME
 
-RUN apt install libreoffice
+RUN apt-get update && apt-get -y -q install libreoffice
 RUN wget https://github.com/google/fonts/archive/main.tar.gz -O gf.tar.gz
 RUN tar -xf gf.tar.gz
 RUN mkdir -p /usr/share/fonts/truetype/google-fonts
