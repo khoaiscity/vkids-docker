@@ -46,6 +46,20 @@ access_file="${destination}access_${backup_time}.json"
 client_secret="yeV6dHoeV7i7Mf-G7nRqVHWE"
 curl -d client_id=$client_id -d client_secret=$client_secret -d device_code=$device_code -d grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Adevice_code https://accounts.google.com/o/oauth2/token >> $access_file
 
+access_token_file="${destination}bearer_${backup_time}.json"
+authentcation_code="4/1AY0e-g6vNqeca3AYXmN69fdD65N_-HBogKInhE1zexutkBH842S4J1FjlpE"
+curl \
+--request POST \
+--data "code=${authentcation_code}&client_id=${client_id}&client_secret=${client_secret}&redirect_uri=urn:ietf:wg:oauth:2.0:oob&grant_type=authorization_code" \
+https://accounts.google.com/o/oauth2/token >> access_token_file
+
 #
 # rm $auth_file
 # rm $access_file
+
+# https://accounts.google.com/o/oauth2/auth?client_id={111571658651-pub8irvb4cloj7nh57pnvo0a1jp7beqq.apps.googleusercontent.com}&redirect_uri=urn:ietf:wg:oauth:2.0:oob&scope=https://www.googleapis.com/auth/drive.file&response_type=code
+
+
+# https://www.googleapis.com/auth/drive.file
+
+# 4/1AY0e-g6vNqeca3AYXmN69fdD65N_-HBogKInhE1zexutkBH842S4J1FjlpE
