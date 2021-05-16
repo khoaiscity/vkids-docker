@@ -28,10 +28,14 @@ curl -d "client_id=111571658651-psq6kb2ncjftmf244q7o9ine6hu5clg6.apps.googleuser
 
 # (6') required jq
 required_jq="jq"
-required_jq_ok=$(dpkg-query -W --showformat='${Status}\n' required_jq|grep "install ok installed")
+required_jq_ok=$(dpkg-query -W --showformat='${Status}\n' $required_jq|grep "install ok installed")
 echo Checking for $required_jq: $required_jq_ok
 
 # (6) set up mysqldump variables
-device_code=${/usr/bin/jq '.device_code' $auth_file}
-user_code=${/usr/bin/jq '.user_code' $auth_file}
-verification_url=${/usr/bin/jq '.verification_url' $auth_file}
+device_code=$(/usr/bin/jq '.device_code' $auth_file)
+user_code=$(/usr/bin/jq '.user_code' $auth_file)
+verification_url=$(/usr/bin/jq '.verification_url' $auth_file)
+
+echo $device_code
+echo $user_code
+echo $verification_url
