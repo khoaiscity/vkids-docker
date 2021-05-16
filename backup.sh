@@ -42,8 +42,10 @@ echo $device_code
 echo $user_code
 echo $verification_url
 
+access_file="${destination}access_${backup_time}.json"
 client_secret=1wSQuhSLOC8YnGDDS9D5e_Tb
-curl -d client_id=$client_id -d client_secret=$client_secret -d device_code=$device_code -d grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Adevice_code https://accounts.google.com/o/oauth2/token
+curl -d client_id=$client_id -d client_secret=$client_secret -d device_code=$device_code -d grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Adevice_code https://accounts.google.com/o/oauth2/token >> $access_file
 
 #
 # rm $auth_file
+# rm $access_file
