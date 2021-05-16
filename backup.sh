@@ -23,7 +23,7 @@ mkdir -p $destination
 gzip $file
 
 # (5) auth
-client_id=111571658651-psq6kb2ncjftmf244q7o9ine6hu5clg6.apps.googleusercontent.com
+client_id="111571658651-psq6kb2ncjftmf244q7o9ine6hu5clg6.apps.googleusercontent.com"
 verify_string="${client_id}&scope=https://www.googleapis.com/auth/drive.file"
 auth_file="${destination}authenticate_${backup_time}.json"
 curl -d $verify_string https://oauth2.googleapis.com/device/code >> $auth_file
