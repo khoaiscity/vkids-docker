@@ -2,7 +2,7 @@
 
 # (1.1) set up backup filename
 backup_time=$(date +%Y-%m-%d-%H%M%S)
-destination=/home/admin/
+destination=/home/admin/vkids/database/
 
 # (1.2) set up mysqldump variables
 database_server=127.0.0.1
@@ -16,3 +16,6 @@ file="${destination}${database}_${backup_time}.sql"
 
 # (3) do the mysql database backup (dump)
 /usr/bin/mysqldump --opt --protocol=TCP --user=${user} --password=${pass} --host=${database_server} ${database} > ${file}
+
+# (4) gzip the mysql database dump file
+gzip $file
