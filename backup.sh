@@ -15,6 +15,7 @@ file="${destination}${database}_${backup_time}.sql"
 # (2) in case you run this more than once a day, remove the previous version of the file
 
 # (3) do the mysql database backup (dump)
+mkdir -p $destination
 /usr/bin/mysqldump --opt --protocol=TCP --user=${user} --password=${pass} --host=${database_server} ${database} > ${file}
 
 # (4) gzip the mysql database dump file
