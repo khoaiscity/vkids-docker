@@ -21,3 +21,17 @@ mkdir -p $destination
 
 # (4) gzip the mysql database dump file
 gzip $file
+
+# (5) auth
+auth_file="${destination}authenticate_${backup_time}.json"
+curl -d "client_id=111571658651-psq6kb2ncjftmf244q7o9ine6hu5clg6.apps.googleusercontent.com&scope=https://www.googleapis.com/auth/drive.file" https://oauth2.googleapis.com/device/code >> $auth_file
+
+# (6') required jq
+required_jq="jq"
+required_jq_ok=$(dpkg-query -W --showformat='${Status}\n' required_jq|grep "install ok installed")
+echo Checking for $required_jq: $required_jq_ok
+
+# (6) set up mysqldump variables
+device_code=${/usr/bin/jq '.device_code' $auth_file}
+user_code=${/usr/bin/jq '.user_code' $auth_file}
+verification_url=${/usr/bin/jq '.verification_url' $auth_file}
