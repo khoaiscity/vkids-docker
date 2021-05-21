@@ -1,5 +1,6 @@
 #!/bin/bash
 
+BUILD_ID=$(date +%b%d-%H%M)
 case $1 in
     "backend")
     docker-compose --project-name=$BUILD_ID-vkids up --no-color --no-start --build $1
