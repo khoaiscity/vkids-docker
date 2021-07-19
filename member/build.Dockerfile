@@ -7,7 +7,10 @@ RUN mkdir $APP_HOME
 
 WORKDIR $APP_HOME
 
-CMD echo BUILDING... \ 
+COPY ./config.ts $APP_HOME/
+
+CMD echo BUILDING... \
+  && cp config.ts mlm-ng/client/src/app/ \
   && npm install --no-color --silent --prefix mlm-ng/client \
   && npm run build --progress=false --no-color --prefix mlm-ng/client \
   && cd mlm-ng \
