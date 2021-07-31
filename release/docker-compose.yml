@@ -62,7 +62,7 @@ services:
     volumes:
       - /www/backend-vkids-logs:/app/go-space/runtime/logs
       - /www/uploads-vkids:/app/go-space/resource
-      - /www/uploads-vkids/json:/app/go-space/json
+      # - /www/uploads-vkids/json:/app/go-space/json
     network_mode: "host"
 
   vkidsland:
