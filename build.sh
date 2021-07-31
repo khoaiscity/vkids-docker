@@ -3,7 +3,7 @@ export COMPOSE_HTTP_TIMEOUT=3000
 
 case $1 in
     "backend")
-    docker-compose up --no-color --build $1-build
+    sudo docker-compose up --no-color --build $1-build
     cp ./backend/go-space/bin/mlm-ng-goapi ./release/backend/go-space/bin
     ;;
     "admin")
