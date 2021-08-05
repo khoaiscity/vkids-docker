@@ -10,9 +10,6 @@ case $1 in
     docker-compose up --no-color --build $1-build
     cp ./admin/build/admin.tar.gz ./release/admin
     ;;
-    "admin-build")
-    docker-compose up --no-color --build $1-build
-    ;;
     "member")
     docker-compose up --no-color --build $1-build
     cp ./member/build/member.tar.gz ./release/member
