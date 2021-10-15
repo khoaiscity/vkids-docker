@@ -8,6 +8,7 @@ RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
 COPY ./config.ts $APP_HOME/
+COPY ./environment.prod.ts $APP_HOME/
 
 CMD echo BUILDING... \
   && cp config.ts mlm-ng/client/src/app/ \
