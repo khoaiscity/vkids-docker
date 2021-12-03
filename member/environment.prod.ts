@@ -4,7 +4,7 @@ export const environment = {
   production: true,
   useHash: true,
   hmr: false,
-  RUN_MODE: 'Production',
+  RUN_MODE: 'staging', // Production staging
   liveChatPrivateKey: 'rSSqvZ5AMLDwM3Cg8uAKUDqCnPMf5BjdvNshbkka',
   liveChatPortMember: '2028',
   liveChatPortAdmin: '2228',
